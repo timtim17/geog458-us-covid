@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2020 US COVID-19 Counts</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="css/map.css">
+        <link rel="stylesheet" href="css/map2.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>United States COVID-19 Counts in 2020</h1>
+            <p>
+                COVID-19 incidence cases observed, for each county in the US in 2020.
+                Useful information for people to track overall health of the country and the virus.
+            </p>
+            <footer>
+                <em>
+                    <strong>Sources:</strong>
+                    <a href="https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv">
+                        The New York Times
+                    </a>
+                </em>
+            </footer>
+        </header>
+        <div id="map"></div>
+        <div id="legend">
+            <h2>Case Counts</h2>
+            <h3>(# Cases)</h3>
+        </div>
+        <div id="text-description">
+            <p>Click a circle!</p>
+        </div>
+        <script src="js/map2.js"></script>
+    </body>
+</html>
